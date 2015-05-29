@@ -4,7 +4,7 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.atom-repl.output-bubble {
+.hydrogen.output-bubble {
     @light-bubble-background: fadein(lighten(@background-color-selected, 40%), 100%);
     @dark-bubble-background: fadein(lighten(@background-color-selected, 5%), 100%);
     @bubble-background: contrast(@text-color, @dark-bubble-background, @light-bubble-background, 20%);
@@ -175,7 +175,12 @@
     }
 }
 
-.atom-repl.status-container {
+.watch-view {
+    width: 300px;
+    height: 100%;
+}
+
+.hydrogen.status-container {
     display: inline-block;
     cursor: pointer;
 
@@ -184,7 +189,7 @@
     }
 }
 
-.atom-repl {
+.hydrogen {
     .spinner {
         display:inline-block;
         text-align: center;
@@ -242,8 +247,4 @@
             -webkit-transform: scaleY(1.0);
         }
     }
-
-
-
-
 }
